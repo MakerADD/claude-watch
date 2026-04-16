@@ -57,6 +57,15 @@ def button_press():
     return jsonify({"ok": True, "message": msg})
 
 
+# --- Reply management ---
+
+@app.route("/reply/clear", methods=["POST"])
+def clear_reply():
+    """Hook clears the pending reply after acting on it."""
+    state["pending_reply"] = None
+    return jsonify({"ok": True})
+
+
 # --- Claude Code hook endpoints ---
 
 @app.route("/hook/tool_start", methods=["POST"])
