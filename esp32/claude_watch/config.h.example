@@ -1,0 +1,20 @@
+// Copy this file to config.h and fill in your values.
+// config.h is gitignored — never commit it.
+
+// --- WiFi Networks ---
+// Add as many as you need (home, work, etc.)
+// The watch will connect to whichever is in range.
+#define WIFI_SSID_1     "YourHomeSSID"
+#define WIFI_PASS_1     "YourHomePassword"
+
+#define WIFI_SSID_2     "YourWorkSSID"
+#define WIFI_PASS_2     "YourWorkPassword"
+
+// --- Server ---
+// IP address of the PC running server.py
+// Home IP:
+#define SERVER_HOST_1   "192.168.1.XXX"
+// Work IP:
+#define SERVER_HOST_2   "192.168.X.XXX"
+
+#define SERVER_PORT     5000
