@@ -1,0 +1,20 @@
+# Secrets - never commit these
+config.h
+secrets.h
+*.env
+
+# Arduino build artifacts
+build/
+*.bin
+*.elf
+*.map
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Windows
+Thumbs.db
+desktop.ini
